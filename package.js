@@ -1,5 +1,8 @@
 Package.describe({
-  name: "xavcz:nova-awesome-vote"
+  name: "xavcz:nova-awesome-vote",
+  summary: "Nova component vote extension pacakge",
+  version: "0.27.0-nova",
+  git: "https://github.com/xavcz/nova-awesome-vote.git"
 });
 
 Package.onUse( function(api) {
@@ -11,6 +14,7 @@ Package.onUse( function(api) {
 
     'nova:core',
     'nova:base-components',
+    'nova:users',
     'nova:posts',
   ]);
 
