@@ -41,12 +41,14 @@ class AwesomeVote extends Telescope.components.Vote {
     const { post, type } = this.props;
     const user = this.context.currentUser;
 
+    const isBase = type === 'base';
     const hasVoted = type === 'base' && (Users.hasUpvoted(user, post) || Users.hasDownvoted(user, post));
     const hasUpvoted = type === 'upvote' && Users.hasUpvoted(user, post);
     const hasDownvoted = type === 'downvote' && Users.hasDownvoted(user, post);
     const actionsClass = classNames(
       "upvote-button",
-      "vote", 
+      "vote",
+      {basescore: isBase}, 
       {voted: hasVoted},
       {upvoted: hasUpvoted},
       {downvoted: hasDownvoted}
