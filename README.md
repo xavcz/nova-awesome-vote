@@ -16,7 +16,7 @@ Awesome vote on [Telescope Nova](https://github.com/TelescopeJS/Telescope)! 🖖
 In your custom package, extends `PostsItem` component and replace the `posts-item-vote` div by :
 
 ```jsx
-<div className="posts-item-vote">
+<div className="posts-item-vote posts-item-awesome-vote">
   <Telescope.components.AwesomeVote post={post} type="base"/>
   <div className="vote-actions-block">
     <Telescope.components.AwesomeVote post={post} type="upvote"/>
