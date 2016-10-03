@@ -1,7 +1,7 @@
 Package.describe({
   name: "xavcz:nova-awesome-vote",
   summary: "Nova component vote extension pacakge",
-  version: "0.27.1-nova",
+  version: "0.27.2-nova",
   git: "https://github.com/xavcz/nova-awesome-vote.git"
 });
 
